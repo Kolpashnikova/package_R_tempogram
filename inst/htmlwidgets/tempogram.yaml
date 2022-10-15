@@ -1,0 +1,12 @@
+# (uncomment to add a dependency)
+ dependencies:
+  - name: tempogram
+    version: 1.0.0
+    src: htmlwidgets/lib/tempogram-1.0.0
+    script:
+      - d3.min.js
+      - nv.d3.lean-test.js
+      - stackedArea.js
+      - colors.js
+    stylesheet:
+      - extra.css
