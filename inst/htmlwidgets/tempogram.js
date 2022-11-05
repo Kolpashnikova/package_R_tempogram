@@ -16,7 +16,7 @@ HTMLWidgets.widget({
         //el.innerText = x.data;
 
         var newSvg = document.getElementById(el.id);
-        newSvg.innerHTML += '<svg id="chart1" style="overflow: visible;"></svg>';
+        newSvg.innerHTML += '<svg id="chart1" style="overflow: visible; padding-left: 20px; padding-bottom: 10px; width: 95%; height: 95%; margin: auto;"></svg>';
 
         var histcatexplong = x.data;
 
