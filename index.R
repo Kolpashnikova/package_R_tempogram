@@ -15,7 +15,7 @@ library(tidyverse)
 ddi <- read_ipums_ddi("data/atus_00026(1).xml")
 data <- read_ipums_micro(ddi)
 
-make_tempogram <- function(df, path_to_activity_codes = "data/ATUS_codes.csv", w = NULL, granularity = "full", method = "first"){
+tu_tempogram <- function(df, path_to_activity_codes = "data/ATUS_codes.csv", w = NULL, granularity = "full", method = "first"){
   start.time <- Sys.time()
 
   mode <- function(codes){
@@ -137,11 +137,34 @@ make_tempogram <- function(df, path_to_activity_codes = "data/ATUS_codes.csv", w
 
 }
 
-tem <- make_tempogram(data, w = "WT06", granularity = 67, method = "last")
+tem <- tu_tempogram(data, w = "WT06", granularity = 67, method = "last")
 
 
 tempogram(toJSON(tem))
 
-#tempo_data <- fromJSON("data/tempo_data.txt")
+#### simply tempogram ####
 
-#tempogram(toJSON(tempo_data))
+library(tempogram)
+library(rjson)
+library(jsonlite)
+
+tempo_data <- fromJSON("data/tempo_data.txt")
+
+tempogram(toJSON(tempo_data))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
