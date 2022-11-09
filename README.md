@@ -13,8 +13,8 @@ Each 'values' variable contains tuples of timestamps and number of observations 
 
 You can try the interactive demo here: (https://kolpashnikova.github.io/tempogram)
 
-![Tempogram](examples/full tempogram.png)
-![One activity](examples/TV viewing.png)
+![Tempogram](https://github.com/Kolpashnikova/package_R_tempogram/blob/main/examples/full%20tempogram.png)
+![One activity](https://github.com/Kolpashnikova/package_R_tempogram/blob/main/examples/TV%20viewing.png)
 
 
 
