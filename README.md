@@ -11,7 +11,12 @@ Each 'values' variable contains tuples of timestamps and number of observations 
 
 ### How it looks like
 
-<iframe style="height: 600px; width: 100vh;" src="https://kolpashnikova.github.io/tempogram" title="tempogram"> </iframe>
+You can try the interactive demo here: (https://kolpashnikova.github.io/tempogram)
+
+![Tempogram](examples/full tempogram.png)
+![One activity](examples/TV viewing.png)
+
+
 
 ### An example of a json file:
 
