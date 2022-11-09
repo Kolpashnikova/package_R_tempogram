@@ -2,6 +2,14 @@
 
 ## Interactive Tempogram in R
 
+### Installation
+
+```
+devtools::install_github("Kolpashnikova/package_R_tempogram")
+
+library(tempogram)
+```
+
 ### Description
 Generates a tempogram in NVD3 JavaScript. It takes in a json file with keys and values.
 
