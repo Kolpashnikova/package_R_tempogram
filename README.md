@@ -27,7 +27,6 @@ and 'values' are necessary variables.)
 
 ### Usage
 tempogram(df)
-tempogram(df, width = NULL, height = NULL, elementId = NULL)
 
 ### References
 Kolpashnikova, Kamila. (2022). Interactive Tempogram in R. Toronto,ON: York University.
