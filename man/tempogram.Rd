@@ -4,10 +4,10 @@
 \alias{tempogram}
 \title{Interactive Tempogram in R}
 \usage{
-tempogram(df, width = NULL, height = NULL, elementId = NULL)
+tempogram(df)
 }
-\description{
-Generates a tempogram in NVD3 JavaScript. It takes in a json file with keys and values.
+\arguments{
+\item{df}{json data with two variables: 'key' and 'values.'
 
 Each 'key' variable represents an activity, such as "Sleep", "Housework", "Paid Work", etc.
 
@@ -73,7 +73,10 @@ An example of a json file:
 [441,403.168],[508,525.3356],[575,482.7296],[642,471.2128],[709,497.8186],
 [776,714.801],[843,771.4396],[910,773.4583],[977,734.2147],[1044,572.2285],
 [1111,399.0302],[1178,253.0847],[1245,127.2335],[1312,92.8047],
-[1379,84.412],[1446,35.8818],[1513,23.8594],[1580,23.7553],[1679,36.22]],"_row":"k"}]
+[1379,84.412],[1446,35.8818],[1513,23.8594],[1580,23.7553],[1679,36.22]],"_row":"k"}]}
+}
+\description{
+Generates a tempogram in NVD3 JavaScript. It takes in a json file with keys and values.
 }
 \references{
 Kolpashnikova, Kamila. (2022). Interactive Tempogram in R. Toronto,ON: York University.

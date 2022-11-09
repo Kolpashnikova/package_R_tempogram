@@ -3,6 +3,11 @@
 #' @description
 #' Generates a tempogram in NVD3 JavaScript. It takes in a json file with keys and values.
 #'
+#' @usage
+#' tempogram(df)
+#'
+#' @param df json data with two variables: 'key' and 'values.'
+#'
 #' Each 'key' variable represents an activity, such as "Sleep", "Housework", "Paid Work", etc.
 #'
 #' Each 'values' variable contains tuples of timestamps and number of observations
