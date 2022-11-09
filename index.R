@@ -8,8 +8,6 @@ library(plyr)
 library(tidyverse)
 
 
-
-
 #if (!require("ipumsr")) stop("Reading IPUMS data into R requires the ipumsr package. It can be installed using the following command: install.packages('ipumsr')")
 
 ddi <- read_ipums_ddi("data/atus_00026(1).xml")
