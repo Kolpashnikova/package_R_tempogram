@@ -4,7 +4,7 @@
 #' Generates a tempogram in NVD3 JavaScript. It takes in a json file with keys and values.
 #'
 #' @usage
-#' tempogram(df)
+#' tempogram(df, width = "auto", height = "550px")
 #'
 #' @param df json data with two variables: 'key' and 'values.'
 #'
@@ -74,13 +74,21 @@
 #' [1111,399.0302],[1178,253.0847],[1245,127.2335],[1312,92.8047],
 #' [1379,84.412],[1446,35.8818],[1513,23.8594],[1580,23.7553],[1679,36.22]],"_row":"k"}]
 #'
+#' @param width a string specifying the width of the output file in pixels (px),
+#' it's "auto" by default --
+#' which specifies responsive size
+#'
+#' @param height a string specifying the height of the output file in pixels (px),
+#' it's "auto" by default --
+#' which specifies responsive size
+#'
 #' @references
 #' Kolpashnikova, Kamila. (2022). Interactive Tempogram in R. Toronto,ON: York University.
 #'
 #' @import htmlwidgets
 #'
 #' @export
-tempogram <- function(df, width = NULL, height = NULL, elementId = NULL) {
+tempogram <- function(df, width = "auto", height = "550px", elementId = NULL) {
 
   # forward options using x
   x = list(

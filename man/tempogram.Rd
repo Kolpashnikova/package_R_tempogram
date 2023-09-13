@@ -4,7 +4,7 @@
 \alias{tempogram}
 \title{Interactive Tempogram in R}
 \usage{
-tempogram(df)
+tempogram(df, width = "auto", height = "550px")
 }
 \arguments{
 \item{df}{json data with two variables: 'key' and 'values.'
@@ -74,6 +74,14 @@ An example of a json file:
 [776,714.801],[843,771.4396],[910,773.4583],[977,734.2147],[1044,572.2285],
 [1111,399.0302],[1178,253.0847],[1245,127.2335],[1312,92.8047],
 [1379,84.412],[1446,35.8818],[1513,23.8594],[1580,23.7553],[1679,36.22]],"_row":"k"}]}
+
+\item{width}{a string specifying the width of the output file in pixels (px),
+it's "auto" by default --
+which specifies responsive size}
+
+\item{height}{a string specifying the height of the output file in pixels (px),
+it's "auto" by default --
+which specifies responsive size}
 }
 \description{
 Generates a tempogram in NVD3 JavaScript. It takes in a json file with keys and values.

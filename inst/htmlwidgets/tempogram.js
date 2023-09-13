@@ -32,13 +32,7 @@ HTMLWidgets.widget({
                 })
                 .showLegend(false)
                 .duration(300)
-                .color(['#'+fullColorHex(colorsNeeded('Sleep')[0]), '#'+fullColorHex(colorsNeeded('Personal Care')[0]),
-                    '#'+fullColorHex(colorsNeeded('Housework')[0]), '#'+fullColorHex(colorsNeeded('Child Care')[0]),
-                    '#'+fullColorHex(colorsNeeded('Adult Care')[0]), '#'+fullColorHex(colorsNeeded('Work')[0]),
-                    '#'+fullColorHex(colorsNeeded('Shopping')[0]), '#'+fullColorHex(colorsNeeded('TV Watching')[0]),
-                    '#'+fullColorHex(colorsNeeded('Eating')[0]), '#'+fullColorHex(colorsNeeded('Leisure')[0]),
-                    '#'+fullColorHex(colorsNeeded('Travel')[0])
-                ]);
+                .color(d3.scale.category20().range());
             var formatCount = d3.format(",.0f"),
                 formatTime = d3.time.format("%H:%M %p"),
                 //formatMinutes = function(d) { return formatTime(new Date(2020, 0, 0, 0, d)); };
