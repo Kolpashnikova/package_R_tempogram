@@ -4,7 +4,7 @@
 #' Generates a tempogram in NVD3 JavaScript. It takes in a json file with keys and values.
 #'
 #' @usage
-#' tempogram(df, width = "auto", height = "550px")
+#' tempogram(df, colors = NULL, width = "auto", height = "550px")
 #'
 #' @param df json data with two variables: 'key' and 'values.'
 #'
@@ -74,6 +74,8 @@
 #' [1111,399.0302],[1178,253.0847],[1245,127.2335],[1312,92.8047],
 #' [1379,84.412],[1446,35.8818],[1513,23.8594],[1580,23.7553],[1679,36.22]],"_row":"k"}]
 #'
+#' @param colors a list of hex custom colors for activities.
+#'
 #' @param width a string specifying the width of the output file in pixels (px),
 #' it's "auto" by default --
 #' which specifies responsive size
@@ -88,11 +90,12 @@
 #' @import htmlwidgets
 #'
 #' @export
-tempogram <- function(df, width = "auto", height = "550px", elementId = NULL) {
+tempogram <- function(df, colors = NULL, width = "auto", height = "550px", elementId = NULL) {
 
   # forward options using x
   x = list(
     data = df,
+    colors = colors,
     message = "works"
   )
 

@@ -19,6 +19,13 @@ HTMLWidgets.widget({
         newSvg.innerHTML += '<svg id="chart1" style="overflow: visible; padding-left: 20px; padding-bottom: 10px; width: 95%; height: 95%; margin: auto;"></svg>';
 
         var histcatexplong = x.data;
+        var colors = x.colors;
+
+        if (colors !== undefined && colors !== null){
+            var colorScale = colors;
+        } else {
+    			  var colorScale = d3.scale.category20().range();
+        }
 
         var chart;
         nv.addGraph(function () {
@@ -32,7 +39,7 @@ HTMLWidgets.widget({
                 })
                 .showLegend(false)
                 .duration(300)
-                .color(d3.scale.category20().range());
+                .color(colorScale);
             var formatCount = d3.format(",.0f"),
                 formatTime = d3.time.format("%H:%M %p"),
                 //formatMinutes = function(d) { return formatTime(new Date(2020, 0, 0, 0, d)); };
